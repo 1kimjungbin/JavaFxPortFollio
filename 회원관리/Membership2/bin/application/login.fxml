@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml" fx:controller="application.loginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="316.0" fitWidth="200.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Downloads/625fcc6438d3db63ffcabd5245e6cf5d98b816fea9f52ec04f1c3e93f5d5eb45bae5ca9326b7fd8d317f76153c4e5f73ca83bf88041f0f592c32a74862c56ae82a2b1d9f4bb47be1c0d50789ea6e5e16%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="399.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="6.0" layoutY="6.0" prefHeight="116.0" prefWidth="387.0">
+               <children>
+                  <ImageView fitHeight="135.0" fitWidth="296.0" layoutX="81.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Downloads/17726436-흰색-배경에-황금-열쇠-.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="16.0" layoutY="139.0" prefHeight="103.0" prefWidth="387.0">
+               <children>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="40.0" prefWidth="121.0" text="사용자 아이디" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="14.0" layoutY="52.0" prefHeight="40.0" prefWidth="121.0" text="패스워드" textAlignment="CENTER">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtId" layoutX="141.0" layoutY="22.0" prefHeight="24.0" prefWidth="217.0" promptText="아이디를 입력하세요." />
+                  <PasswordField fx:id="txtPwd" layoutX="141.0" layoutY="60.0" prefHeight="24.0" prefWidth="216.0" promptText="암호를 입력하세요." />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="7.0" layoutY="236.0" prefHeight="146.0" prefWidth="387.0">
+               <children>
+                  <Label fx:id="lblOk" alignment="CENTER" layoutX="48.0" layoutY="3.0" prefHeight="28.0" prefWidth="285.0" textFill="#0e42ff">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnLogin" layoutX="55.0" layoutY="41.0" mnemonicParsing="false" onAction="#btnLoginAction" prefHeight="57.0" prefWidth="134.0" style="-fx-background-color: blue;" text="로그인" textFill="#fcfafa">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnReg" layoutX="209.0" layoutY="41.0" mnemonicParsing="false" onAction="#btnRegAction" prefHeight="58.0" prefWidth="134.0" style="-fx-background-color: blue;" text="회원가입" textFill="#fcfafa">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnCancel" layoutX="55.0" layoutY="109.0" mnemonicParsing="false" onAction="#btnCancelAction" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: blue;" text="취소" textFill="#fcfafa">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnClose" layoutX="209.0" layoutY="110.0" mnemonicParsing="false" onAction="#btnCloseAction" prefHeight="34.0" prefWidth="134.0" style="-fx-background-color: blue;" text="창닫기" textFill="#fcfafa">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
